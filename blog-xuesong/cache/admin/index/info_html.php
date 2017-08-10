@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="renderer" content="webkit">
+		<title><?=$title;?></title>
+		<link rel="stylesheet" href="public/css/pintuer.css">
+		<link rel="stylesheet" href="public/css/admin.css">
+		<script src="public/js/jquery.js"></script>
+		<script src="public/js/pintuer.js"></script>
+	</head>
+	<body>
+		<div class="panel admin-panel">
+			<div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 站点信息</strong></div>
+			<div class="body-content">
+				<form method="post" class="form-x" action="index.php?m=admin&c=index&a=info">
+					<div class="form-group">
+						<div class="label">
+							<label>站点域名：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" name="webname" value="<?=$web['WEB_URL'];?>" />
+							<div class="tips"></div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="label">
+							<label>name：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" name="Owner" value="<?=$web['Owner'];?>" />
+							<div class="tips"></div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="label">
+							<label>Signature：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" name="Signature" value="<?=$web['Signature'];?>" />
+							<div class="tips"></div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="label">
+							<label>School：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" name="School" value="<?=$web['School'];?>" />
+							<div class="tips"></div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="label">
+							<label>Job：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" name="Job" value="<?=$web['Job'];?>" />
+							<div class="tips"></div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="label">
+							<label>Hobby：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" name="Hobby" value="<?=$web['Hobby'];?>" />
+							<div class="tips"></div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="label">
+							<label>Nickname：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" name="Nickname" value="<?=$web['Nickname'];?>" />
+							<div class="tips"></div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="label">
+							<label>Tel：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" name="Tel" value="<?=$web['Tel'];?>" />
+							<div class="tips"></div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="label">
+							<label>Email：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" name="Email" value="<?=$web['Email'];?>" />
+							<div class="tips"></div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="label">
+							<label>Postcode：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" name="Postcode" value="<?=$web['Postcode'];?>" />
+							<div class="tips"></div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="label">
+							<label>Address：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" name="Address" value="<?=$web['Address'];?>" />
+							<div class="tips"></div>
+						</div>
+					</div>
+					
+					<!-- <div class="form-group">
+						<div class="label">
+							<label>底部信息：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input" name="footinfo" value="<?=$footinfo;?>" />
+							<div class="tips"></div>
+						</div>
+					</div> -->
+					
+					<div class="form-group">
+						<div class="label">
+						  <label></label>
+						</div>
+						<div class="field">
+						    <button class="button bg-main" name ="tijiao" type="submit" value="1"> 提交</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
